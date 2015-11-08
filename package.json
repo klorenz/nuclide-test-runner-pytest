@@ -1,0 +1,27 @@
+{
+  "name": "nuclide-test-runner-pytest",
+  "main": "./lib/nuclide-test-runner-pytest.coffee",
+  "version": "0.0.0",
+  "description": "py.test Test Runner for nuclide-test-runner",
+  "keywords": [
+    "py.test",
+    "testrunner",
+    "test",
+    "python"
+  ],
+  "providedServices": {
+    "nuclide-test-runner.provider": {
+      "description": "py.test Test Runner",
+      "versions": {
+        "0.0.0": "provideTestRunner"
+      }
+    }
+  },
+  "repository": "https://github.com/klorenz/nuclide-test-runner-pytest",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
