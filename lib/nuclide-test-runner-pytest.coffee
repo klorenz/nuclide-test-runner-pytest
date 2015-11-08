@@ -167,7 +167,13 @@ class PyTestRunner
             if testDetails.length
               debugger
               _details = testDetails.join("\n")
-              failedTests["#{fileName}::#{testName}"].details = "\x1b[0m"+_details
+              _key = "#{fileName}::#{testName}"
+
+              if _key of failedTests
+                failedTests["#{fileName}::#{testName}"].details = _details
+              else
+                console.error "could not find #{_key} in" , failedTests
+
               testDetails = []
 
             testName = m[1]
@@ -313,7 +319,6 @@ module.exports =
   provideTestRunner: (service) ->
     # runPyTest "--version",
     #   error:
-
 
     return {
       label: "py.test"
