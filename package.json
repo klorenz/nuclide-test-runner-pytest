@@ -1,7 +1,7 @@
 {
   "name": "nuclide-test-runner-pytest",
   "main": "./lib/nuclide-test-runner-pytest.coffee",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "py.test Test Runner for nuclide-test-runner",
   "keywords": [
     "py.test",
@@ -22,6 +22,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
