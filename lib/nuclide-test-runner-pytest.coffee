@@ -143,7 +143,7 @@ class PyTestRunner
       isFailures = false
 
       for line in lines[...-1]
-        cleanLine = line.replace(/\033\[\d{1,2}m/g, '')
+        cleanLine = line.replace(/\x33\[\d{1,2}m/g, '')
 
         console.log "line", line
         console.log "cleanLine", cleanLine
